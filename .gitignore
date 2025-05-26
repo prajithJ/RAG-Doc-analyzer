@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+*.env
+.env
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Streamlit
+.streamlit/
+
+# ChromaDB persistence directory (if you don't want to commit the DB itself)
+# If you WANT to commit a small, sample DB for others to run immediately, then REMOVE this line.
+# For a personal project where others might clone and run, sometimes it's okay.
+# For larger projects or if data is sensitive, definitely ignore.
+chroma_db_streamlit/
+chroma_db/ # If you used this for rag_core.py and it's still around
+
+# Uploaded files directory (temporary)
+uploaded_files/
+
+# Operating System files
+.DS_Store
+Thumbs.db
