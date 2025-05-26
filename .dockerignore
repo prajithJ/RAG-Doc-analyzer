@@ -1,0 +1,19 @@
+# .dockerignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.git/
+.gitignore
+.dockerignore
+README.md # Often not needed inside the image
+Dockerfile # The Dockerfile itself is not needed inside the image
+.env # CRITICAL: Do NOT copy your .env file with secrets into the image!
+chroma_db_streamlit/ # Don't copy the local DB if it exists
+chroma_db/
+uploaded_files/
+.vscode/
+.idea/
